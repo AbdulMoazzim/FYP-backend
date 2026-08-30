@@ -1,0 +1,3 @@
+appenv
+.env
+__pycache__

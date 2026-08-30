@@ -5,7 +5,9 @@ Run with:  uvicorn app.main:app --reload
 Docs at:   http://localhost:8000/docs
 """
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
+from app.config import settings
 from app.database import Base, engine
 from app.routers import projects, requirements, events
 
@@ -22,6 +24,18 @@ app = FastAPI(
         "will build on in later milestones."
     ),
     version="0.1.0",
+)
+
+# CORS: lets a frontend running on a different origin (e.g. a React
+# dev server on localhost:3000, or your deployed frontend's domain)
+# call this API from the browser. Without this, the browser blocks
+# the requests even though the API itself would happily respond.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=settings.cors_origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 app.include_router(projects.router)

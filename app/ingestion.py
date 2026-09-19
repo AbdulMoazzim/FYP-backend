@@ -1,5 +1,5 @@
 """
-Context ingestion layer (Day 2).
+Context ingestion layer.
 
 Takes a raw ProjectContext payload (dict, as received over the API),
 validates it against the finalized schema, and normalizes it for
@@ -27,7 +27,7 @@ def ingest_project_context(raw: Dict[str, Any]) -> ProjectContext:
     Validate and normalize a raw ProjectContext dict.
 
     Rejects payloads missing required fields rather than silently
-    defaulting them (per the Day 2 design notes). Pydantic also
+    defaulting them . Pydantic also
     normalizes date strings into real datetime objects here, so
     downstream staleness checks (e.g. "blocked for N days") are plain
     datetime subtraction rather than string parsing.

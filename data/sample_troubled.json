@@ -1,0 +1,74 @@
+{
+  "project_id": "AGILIRO-DEMO",
+  "sprint": {
+    "sprint_id": "SPRINT-13",
+    "start_date": "2026-09-15T00:00:00Z",
+    "end_date": "2026-09-28T00:00:00Z",
+    "goal": "Ship the payments integration"
+  },
+  "backlog_items": [
+    {
+      "item_id": "BLK-010",
+      "title": "Integrate payment gateway SDK",
+      "status": "blocked",
+      "assignee": "ali",
+      "priority": "high",
+      "story_points": 8,
+      "last_updated": "2026-09-11T10:00:00Z",
+      "source_refs": ["self"]
+    },
+    {
+      "item_id": "BLK-011",
+      "title": "Design refund flow",
+      "status": "todo",
+      "assignee": null,
+      "priority": "high",
+      "story_points": 5,
+      "last_updated": "2026-09-15T09:00:00Z",
+      "source_refs": ["self"]
+    },
+    {
+      "item_id": "BLK-012",
+      "title": "Update pricing page",
+      "status": "in_progress",
+      "assignee": "hina",
+      "priority": "low",
+      "story_points": 2,
+      "last_updated": "2026-09-16T13:00:00Z",
+      "source_refs": ["self"]
+    },
+    {
+      "item_id": "BLK-013",
+      "title": "Add invoice PDF export",
+      "status": "todo",
+      "assignee": "sara",
+      "priority": "medium",
+      "story_points": 3,
+      "last_updated": "2026-09-14T10:00:00Z",
+      "source_refs": ["self"]
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVT-201",
+      "type": "meeting_summary",
+      "timestamp": "2026-09-16T15:00:00Z",
+      "raw_text": "Sprint review: payment gateway integration stuck because the vendor sandbox API keys still haven't been provisioned by IT, going on 5 days now.",
+      "source_ref": "meeting-2026-09-16#3"
+    },
+    {
+      "event_id": "EVT-202",
+      "type": "chat_update",
+      "timestamp": "2026-09-17T09:30:00Z",
+      "raw_text": "ali: still waiting on sandbox keys, can't make progress on BLK-010 until then.",
+      "source_ref": "chat-2026-09-17#12"
+    },
+    {
+      "event_id": "EVT-203",
+      "type": "status_update",
+      "timestamp": "2026-09-12T10:00:00Z",
+      "raw_text": "Team velocity last sprint was 12 story points, down from an average of 18 over the previous three sprints.",
+      "source_ref": "velocity-report-sprint-12#1"
+    }
+  ]
+}

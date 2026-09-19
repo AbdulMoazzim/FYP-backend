@@ -1,0 +1,60 @@
+{
+  "project_id": "AGILIRO-DEMO",
+  "sprint": {
+    "sprint_id": "SPRINT-12",
+    "start_date": "2026-09-01T00:00:00Z",
+    "end_date": "2026-09-14T00:00:00Z",
+    "goal": "Ship the login and onboarding flow"
+  },
+  "backlog_items": [
+    {
+      "item_id": "BLK-001",
+      "title": "Build login form UI",
+      "status": "done",
+      "assignee": "sara",
+      "priority": "high",
+      "story_points": 3,
+      "last_updated": "2026-09-10T09:00:00Z",
+      "source_refs": ["self"]
+    },
+    {
+      "item_id": "BLK-002",
+      "title": "Wire up auth API",
+      "status": "in_progress",
+      "assignee": "ali",
+      "priority": "high",
+      "story_points": 5,
+      "last_updated": "2026-09-16T14:00:00Z",
+      "source_refs": ["self"]
+    },
+    {
+      "item_id": "BLK-003",
+      "title": "Write onboarding copy",
+      "status": "in_progress",
+      "assignee": "hina",
+      "priority": "medium",
+      "story_points": 2,
+      "last_updated": "2026-09-17T11:00:00Z",
+      "source_refs": ["self"]
+    },
+    {
+      "item_id": "BLK-004",
+      "title": "Add password reset flow",
+      "status": "todo",
+      "assignee": "ali",
+      "priority": "medium",
+      "story_points": 3,
+      "last_updated": "2026-09-15T08:00:00Z",
+      "source_refs": ["self"]
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVT-101",
+      "type": "status_update",
+      "timestamp": "2026-09-17T11:05:00Z",
+      "raw_text": "Standup: onboarding copy on track, auth API about half done, no blockers reported.",
+      "source_ref": "standup-2026-09-17#1"
+    }
+  ]
+}

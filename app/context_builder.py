@@ -1,7 +1,7 @@
 """
 Context/prompt builder
 
-Turns a validated ProjectContext into a compact, source-tagged text
+Turns a validated ProjectContext into a compact, source-tagged tex
 block that can be handed to the LLM. Design goals:
 
 - Summarize backlog items grouped by status rather than dumping raw

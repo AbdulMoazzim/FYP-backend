@@ -1,8 +1,8 @@
 """
-Context/prompt builder (Day 2 design, implemented).
+Context/prompt builder
 
 Turns a validated ProjectContext into a compact, source-tagged text
-block that can be handed to the LLM. Design goals (per the Day 2 log):
+block that can be handed to the LLM. Design goals:
 
 - Summarize backlog items grouped by status rather than dumping raw
   JSON, to keep the prompt short and easy to reason over.

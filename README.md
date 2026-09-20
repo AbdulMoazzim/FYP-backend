@@ -6,7 +6,6 @@ One of three agents in AGILIRO (with Product Owner Agent & Knowledge Agent). Tak
 
 ## Status (Day 3)
 
-- ✅ ProjectContext & AgentResult schemas locked
 - ✅ FastAPI skeleton (`api/`, `core/`, `db/`) + `agent_results` DB migration
 - ✅ Context ingestion + prompt builder working
 - 🟡 `POST /agents/scrum-master/run` live, returns hardcoded `AgentResult` for now
